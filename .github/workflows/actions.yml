@@ -5,6 +5,10 @@
     run-github-actions:
       runs-on: ubuntu-latest
       steps:
+        - name: list files
+          run: |
+            pwd
+            ls
         - name: simple js action
           id: greet
           uses: actions/hello-world-javascript-action@v1
